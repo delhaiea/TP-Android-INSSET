@@ -18,4 +18,8 @@ class CustomRepository {
         dao.insert(myData)
     }
 
+    suspend fun deleteAll() = withContext(Dispatchers.IO) {
+        dao.deleteAll()
+    }
+
 }

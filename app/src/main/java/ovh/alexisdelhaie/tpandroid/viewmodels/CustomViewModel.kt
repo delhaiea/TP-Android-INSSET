@@ -7,6 +7,7 @@ import ovh.alexisdelhaie.tpandroid.pojos.SimpleObject
 import ovh.alexisdelhaie.tpandroid.repositories.CustomRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import java.util.*
 
 class CustomViewModel: ViewModel() {
 
@@ -15,7 +16,13 @@ class CustomViewModel: ViewModel() {
 
     fun insertData(text: String, drawableId: Int) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.insert(SimpleObject(null, text, drawableId))
+            repository.insert(SimpleObject(null, text, drawableId, "", Date()))
+        }
+    }
+
+    fun deleteAll() {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.deleteAll()
         }
     }
 

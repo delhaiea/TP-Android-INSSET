@@ -2,6 +2,14 @@
     <string name="app_name">TP Android</string>
     <string name="button_recycler_view">Ouvrir le recycler view simple</string>
     <string name="say_my_name">Alexis Delhaie</string>
-    <string name="button_add">Ajouter un objet</string>
+    <string name="button_delete">Nettoyer</string>
+    <string name="button_retrofit">Ouvrir l\'activité Retrofit</string>
+    <string name="gender">Genre</string>
+    <string name="location">Adresse</string>
+    <string name="street">Rue</string>
+    <string name="city">Ville</string>
+    <string name="state">Etat/Province</string>
+    <string name="country">Pays</string>
+    <string name="email">Adresse email</string>
 
 </resources>

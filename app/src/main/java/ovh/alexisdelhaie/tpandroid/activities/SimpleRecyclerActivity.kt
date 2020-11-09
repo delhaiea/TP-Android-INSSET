@@ -1,5 +1,6 @@
 package ovh.alexisdelhaie.tpandroid.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -12,9 +13,9 @@ import ovh.alexisdelhaie.tpandroid.R
 import ovh.alexisdelhaie.tpandroid.adapters.CustomAdapter
 import ovh.alexisdelhaie.tpandroid.pojos.SimpleObject
 import kotlinx.android.synthetic.main.simple_recycler_activity.*
-import kotlin.random.Random
+import ovh.alexisdelhaie.tpandroid.activities.eventcallbacks.OnClickCallback
 
-class SimpleRecyclerActivity : AppCompatActivity() {
+class SimpleRecyclerActivity : AppCompatActivity(), OnClickCallback<SimpleObject> {
 
     private lateinit var adapter: CustomAdapter;
     private lateinit var viewModel : CustomViewModel
@@ -28,8 +29,8 @@ class SimpleRecyclerActivity : AppCompatActivity() {
         setContentView(R.layout.simple_recycler_activity)
         viewModel = ViewModelProvider(this)[CustomViewModel::class.java]
         adapter = CustomAdapter(this)
-        myRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-        myRecyclerView.adapter = adapter
+        peopleRecyclerView.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
+        peopleRecyclerView.adapter = adapter
     }
 
     override fun onStart() {
@@ -51,6 +52,17 @@ class SimpleRecyclerActivity : AppCompatActivity() {
         if (size != null) {
             viewModel.insertData("Nouvelle data", if (size % 2 == 0) R.drawable.image else R.drawable.oppressive_laughter)
         }
+    }
+
+    fun onClearButtonClick(v: View) {
+        viewModel.deleteAll()
+    }
+
+    override fun onItemClick(obj: SimpleObject) {
+        val i: Intent = Intent(this, ItemDetailActivity::class.java).also {
+            it.putExtra("drawableId", obj.drawable)
+        }
+        startActivity(i)
     }
 
 }

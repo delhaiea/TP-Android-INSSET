@@ -8,17 +8,30 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ovh.alexisdelhaie.tpandroid.R
+import ovh.alexisdelhaie.tpandroid.activities.eventcallbacks.OnClickCallback
 import ovh.alexisdelhaie.tpandroid.pojos.SimpleObject
 
 class CustomAdapter(private val context: Context):
     RecyclerView.Adapter<CustomAdapter.MyCustomViewHolder>() {
 
+    private val mCallback = context as OnClickCallback<SimpleObject>
+
     private val data: ArrayList<SimpleObject> = ArrayList()
     private val inflater: LayoutInflater = LayoutInflater.from(context)
 
     inner class MyCustomViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val itemImage: ImageView = itemView.findViewById(R.id.item_recycler_image)
-        val itemValue: TextView = itemView.findViewById(R.id.item_recycler_text)
+        val itemImage: ImageView = itemView.findViewById(R.id.item_photo)
+        val itemValue: TextView = itemView.findViewById(R.id.item_name)
+
+        private fun itemClicked() {
+            mCallback.onItemClick(
+                this@CustomAdapter.data[adapterPosition])
+        }
+
+        init {
+            this.itemView.setOnClickListener { itemClicked() }
+        }
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyCustomViewHolder {

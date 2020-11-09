@@ -16,4 +16,9 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, SimpleRecyclerActivity::class.java)
         startActivity(i)
     }
+
+    fun onRetrofitButtonClick(v: View) {
+        val i = Intent(this, RetrofitActivity::class.java)
+        startActivity(i)
+    }
 }
