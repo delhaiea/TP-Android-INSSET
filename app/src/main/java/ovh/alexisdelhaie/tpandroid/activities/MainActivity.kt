@@ -21,4 +21,9 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, RetrofitActivity::class.java)
         startActivity(i)
     }
+
+    fun onOpenLoginButtonClick(v: View) {
+        val i = Intent(this, LoginActivity::class.java)
+        startActivity(i)
+    }
 }

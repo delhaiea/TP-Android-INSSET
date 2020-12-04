@@ -11,5 +11,23 @@
     <string name="state">Etat/Province</string>
     <string name="country">Pays</string>
     <string name="email">Adresse email</string>
-
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username">Adresse email</string>
+    <string name="password">Mot de passe</string>
+    <string name="need_an_account">Besoins d\'un compte ?</string>
+    <string name="log_in">Connexion</string>
+    <string name="open_login_view">Ouvrir la vue de connexion</string>
+    <string name="full_name">Nom complet</string>
+    <string name="password_again">Confirmez votre mot de passe</string>
+    <string name="register">S\'inscrire</string>
+    <string name="wrong_credential">Le mot de passe et/ou l\'adresse email renseigné n\'est pas valide</string>
+    <string name="no_user_logged">Aucun utilisateur n\'est connecté</string>
+    <string name="disconnect">Se déconnecter</string>
+    <string name="connected_user">Bonjour %1$s !</string>
+    <string name="missing_field">Un des champs requis est manquant</string>
+    <string name="wtf_error">Erreur...mais personne ne sait pourquoi 😔</string>
+    <string name="weak_password">Le mot de passe doit faire 6 caractères au minimum</string>
+    <string name="user_collide">L\'utilisateur existe déjà</string>
+    <string name="email_malformed">L\'adresse email est incorrecte</string>
+    <string name="passwords_not_matches">Les mots de passe ne correspondent pas</string>
 </resources>
