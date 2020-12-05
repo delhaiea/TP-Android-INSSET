@@ -30,4 +30,9 @@
     <string name="user_collide">L\'utilisateur existe déjà</string>
     <string name="email_malformed">L\'adresse email est incorrecte</string>
     <string name="passwords_not_matches">Les mots de passe ne correspondent pas</string>
+    <string name="battery_voltage">Voltage</string>
+    <string name="battery_level">Niveau</string>
+    <string name="battery">Batterie</string>
+    <string name="refresh">Rafraîchir</string>
+    <string name="open_battery_activity">Ouvrir l\'activité \"batterie\"</string>
 </resources>

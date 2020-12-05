@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "860575019131",
-    "project_id": "tp-android-m2",
-    "storage_bucket": "tp-android-m2.appspot.com"
+    "project_number": "994741267528",
+    "project_id": "tp-android-m2-39437",
+    "storage_bucket": "tp-android-m2-39437.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:860575019131:android:f4a0d447dd52b8783632de",
+        "mobilesdk_app_id": "1:994741267528:android:efe848e8a8bd5e3acbfc7d",
         "android_client_info": {
           "package_name": "ovh.alexisdelhaie.tpandroid"
         }
       },
       "oauth_client": [
         {
-          "client_id": "860575019131-1b0ih7lccmee343prvknbam2bungc1ub.apps.googleusercontent.com",
+          "client_id": "994741267528-31o78odg3agnk0i5mmorjhg2k1gucdv2.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBnLwOYnTqjIbvOJODYwO_eGa2EuP7W2-I"
+          "current_key": "AIzaSyCoi6R7SBocm8dUrWGg6oTrUiXaFPGuoMw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "860575019131-1b0ih7lccmee343prvknbam2bungc1ub.apps.googleusercontent.com",
+              "client_id": "994741267528-31o78odg3agnk0i5mmorjhg2k1gucdv2.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

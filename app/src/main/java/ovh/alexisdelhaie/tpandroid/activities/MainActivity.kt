@@ -26,4 +26,10 @@ class MainActivity : AppCompatActivity() {
         val i = Intent(this, LoginActivity::class.java)
         startActivity(i)
     }
+
+    fun onOpenBatteryButtonClick(v: View) {
+        val i = Intent(this, BatteryActivity::class.java)
+        startActivity(i)
+    }
+
 }
